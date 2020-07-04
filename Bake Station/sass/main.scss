@@ -1,0 +1,20 @@
+@import "abstracts/functions"; 
+@import "abstracts/variables"; // all variables
+@import "abstracts/mixins";
+
+@import "base/animation"; //all animation
+@import "base/base"; // base codes of the page
+@import "base/typography"; //fonts and other style management
+@import "base/utilities"; 
+
+@import "components/button";
+
+@import "layout/header"; // header codes
+@import "layout/grid";
+
+@import "pages/home";
+
+
+
+
+
