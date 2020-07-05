@@ -1,6 +1,6 @@
 .row {
     max-width: $grid_width;
-    background-color: rgba(132, 223, 113, 0.933);
+    //background-color: rgba(132, 223, 113, 0.933);
     margin: 0 auto;
 
     // Everything inteasd the last child
@@ -13,7 +13,7 @@
 
     // attribute selector
     [class^="col_"] {
-        background-color: rgb(205, 226, 19);
+        //background-color: rgb(205, 226, 19);
         float: left;
 
         &:not(:last-child) {
