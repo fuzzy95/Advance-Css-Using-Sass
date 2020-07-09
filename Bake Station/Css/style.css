@@ -89,10 +89,26 @@ body {
     transform: skew(20deg) skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.heading_tartiary {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 2rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u_center_text {
   text-align: center; }
 
-.u_margin_bottom_8 {
+.u_margin_bottom_small {
+  margin-bottom: 1.5rem; }
+
+.u_margin_bottom_medium {
+  margin-bottom: 4rem; }
+
+.u_margin_bottom_big {
   margin-bottom: 8rem; }
 
 .btn:link, .btn:visited {
@@ -104,7 +120,7 @@ body {
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
-  font-size: 1.6rem; }
+  font-size: 2rem; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -141,9 +157,28 @@ body {
   animation: moveInBottom 2.5s ease-out;
   animation-fill-mode: backwards; }
 
+.btn_text:link, .btn_text:visited {
+  font-size: 2rem;
+  color: #50d39ca2;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #50d39ca2;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn_text:hover {
+  background-color: #50d39ca2;
+  color: #ffffff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); }
+
+.btn_text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(0); }
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #50d39ca2, #bcd87ac2), url(../img/robson-denian-mateus-82Do5SRXGkE-unsplash.jpg);
+  background-image: linear-gradient(to right bottom, #50d39ca2, #bcd87ac2), url(../img/5f06ab7481883.jpg);
   background-size: cover;
   background-position: top;
   /*position: relative; */

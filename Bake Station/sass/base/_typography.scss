@@ -57,3 +57,17 @@ body {
         text-shadow: .5rem 1rem 2rem rgba($color_black, .2);
     }
 }
+
+.heading_tartiary {
+    font-size: $default_font_size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default_font_size;
+    
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
