@@ -47,15 +47,24 @@ body {
     letter-spacing: 1.5rem;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $color_primary, $color_primary_light);
-    -webkit-background-clip: text;
     color: transparent;
     transition: all .2s;
+    -webkit-background-clip: text;
+
+    &_about {
+        background-image: linear-gradient(to right, $color_primary, $color_primary_light);
+    }
+
+    &_menu {
+        background-image: linear-gradient(to right, $color_section_menu_heading_light, $color_section_menu_heading_dark);
+    }
 
     &:hover {
-        transform: skew(20deg) skewY(2deg) skewX(15deg) scale(1.1);
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color_black, .2);
     }
+
+
 }
 
 .heading_tartiary {
