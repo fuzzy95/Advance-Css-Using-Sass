@@ -1,16 +1,13 @@
 .card {
 
+    // Functionality
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
 
     &__side {
-        background-color: orangered;
-        color: #ffffff;
-        font-size: 2rem;
-
-        height: 50rem;
+        height: 52rem;
         transition: all 1s ease;
         position: absolute;
         top: 0;
@@ -18,6 +15,7 @@
         width: 100%;
         backface-visibility: hidden;
         border-radius: 3px;
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color_black, .15);
 
         &__front {
@@ -48,4 +46,82 @@
     &:hover &__side__back {
         transform: rotateY(0);
     }
+
+    // Front Siade Styling
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: soft-light;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+        &_1 {
+            background-image: url(../../img/card_image_1.jpg);
+        }
+
+        &_2 {
+            background-image: url(../../img/card_image_2.jpg);
+        }
+
+        &_3 {
+            background-image: url(../../img/card_image_3.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color_white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 55%;
+    }
+
+    &__heading__span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &_1 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color_secondary_light, .85), 
+            rgba($color_secondary_dark, .85));
+        }
+
+        &_2 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color_tartiary_light, .85), 
+            rgba($color_tartiary_dark, .85));
+        }
+
+        &_3 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color_quaternary_light, .85), 
+            rgba($color_quaternary_dark, .85));
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 99%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 2rem;
+                padding: .5rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color_grey_light_2;
+                }
+            }
+        }
+    }
+
 }

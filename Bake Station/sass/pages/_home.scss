@@ -12,11 +12,11 @@
         $color_primary_light), 
     url(../img/feature_image.jpg);
     background-size: cover;
-    transform: skewY(-7deg);
+    transform: skewY(-5deg);
     margin-top: -10.7rem;
 
     & > * {
-        transform: skewY(7deg);
+        transform: skewY(5deg);
     }
 }
 
