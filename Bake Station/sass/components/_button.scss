@@ -37,6 +37,15 @@
             background-color: $color_white;
         }
     }
+
+    &__green {
+        background-color: $color_primary_dark;
+        color: $color_white;
+
+        &::after {
+            background-color: $color_primary_dark;
+        }
+    }
     
     &::after {
         content: "";

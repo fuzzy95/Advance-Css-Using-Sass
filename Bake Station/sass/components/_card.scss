@@ -54,6 +54,8 @@
         background-blend-mode: soft-light;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
 
         &_1 {
             background-image: url(../../img/card_image_1.jpg);
@@ -122,6 +124,32 @@
                 }
             }
         }
+    }
+
+    // Back Side Styling
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price_box {
+        text-align: center;
+        color: $color_white;
+        margin-bottom: 8rem;
+    }
+
+    &__price_only {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    &__price_value {
+        font-size: 6rem;
+        font-weight: 100;
     }
 
 }
