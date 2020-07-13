@@ -27,6 +27,33 @@
 }
 
 .section_stories {
+    position: relative;
     padding: 15rem 0;
-    background-color: $color_grey_light_1;
+    //background-color: $color_grey_light_1;
+}
+.section_book {
+    padding: 15rem 0;
+    background-image: linear-gradient(
+        to right bottom, 
+        $color_primary, 
+        $color_primary_light);
+    //background-image: linear-gradient(to right bottom, $color_section_booking_bg_light, $color_section_booking_bg_dark);
+}
+
+.book {
+    background-image: linear-gradient(105deg, 
+                                      rgba($color_white, .9) 0%,
+                                      rgba($color_white, .9) 50%, 
+                                      transparent 50%), 
+                                      url(../../img/booking_image5.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color_black, .45);
+
+    height: 65rem;
+
+    &_form {
+        width: 50%;
+        padding: 6rem;
+    }
 }

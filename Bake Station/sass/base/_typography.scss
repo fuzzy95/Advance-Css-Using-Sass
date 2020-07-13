@@ -63,6 +63,10 @@ body {
         background-image: linear-gradient(to right, $color_section_stories_heading_light, $color_section_stories_heading_dark);
     }
 
+    &_booking {
+        background-image: linear-gradient(to right bottom, $color_section_booking_bg_light, $color_section_booking_bg_dark);
+    }
+
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color_black, .2);
