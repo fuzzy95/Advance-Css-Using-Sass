@@ -15,8 +15,27 @@
         <title>Kitchen | Exciting baked food for everyone</title>
     </head>
     <body>
-        <header class="header">
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi_toggle">
 
+            <label for="navi_toggle" class="navigation__button">Menu</label>
+
+            <div class="navigation__background">
+                &nbsp;
+            </div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Us</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Features</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Foods</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <header class="header">
             <div class="header__logo_box">
                 <img src="img/LOGO.png" alt="logo" class="header__logo">
             </div>
@@ -63,7 +82,6 @@
             </section>
 
             <section class="section_features">
-
                 <div class="row">
                     <div class="col_1_of_4">
                         <div class="feature_box">
@@ -108,7 +126,6 @@
             </section>
 
             <section class="section_menu">
-
                 <div class="u_center_text u_margin_bottom_big">
                     <h2 class="heading_secondary heading_secondary_menu">
                         Discover our Menu
@@ -218,7 +235,6 @@
             </section>
 
             <section class="section_stories">
-
                 <div class="bg_video">
                     <video class="bg_video__content" autoplay muted loop>
                         <source src="img/coverr-baker-pouring-flour-1586435075957.mp4" type="video/mp4">
@@ -319,6 +335,30 @@
                 </div>
             </section>
         </main>
+
+        <footer class="footer">
+            <div class="footer__logo_box">
+                <img src="img/LOGO_TRANS.png" alt="Full Logo" class="footer__logo">
+            </div>
+            <div class="row">
+                <div class="col_1_of_2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_1_of_2">
+                    <p class="footer__copyright">
+                        Built by <a href="#" class="footer__link">FuzzY</a> for Practice. Copyright &copy; by FuzzY. You are allowed to use it as you like to.
+                    </p>
+                </div>
+            </div>
+        </footer>
 
         <!--
         <section class="grid_test">
