@@ -30,11 +30,11 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Us</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Features</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Foods</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Order Now</a></li>
+                    <li class="navigation__item"><a href="#section_about" class="navigation__link"><span>01</span>About Us</a></li>
+                    <li class="navigation__item"><a href="#section_features" class="navigation__link"><span>02</span>Features</a></li>
+                    <li class="navigation__item"><a href="#section_menu" class="navigation__link"><span>03</span>Popular Foods</a></li>
+                    <li class="navigation__item"><a href="#section_stories" class="navigation__link"><span>04</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#section_book" class="navigation__link"><span>05</span>Order Now</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,7 +55,7 @@
         </header>
 
         <main>
-            <section class="section_about">
+            <section class="section_about" id="section_about">
                 <div class="u_center_text u_margin_bottom_big">
                     <h2 class="heading_secondary heading_secondary_about">
                         Hot baked foor for everyone
@@ -85,7 +85,7 @@
                 </div>
             </section>
 
-            <section class="section_features">
+            <section class="section_features" id="section_features">
                 <div class="row">
                     <div class="col_1_of_4">
                         <div class="feature_box">
@@ -129,7 +129,7 @@
                 </div>
             </section>
 
-            <section class="section_menu">
+            <section class="section_menu" id="section_menu">
                 <div class="u_center_text u_margin_bottom_big">
                     <h2 class="heading_secondary heading_secondary_menu">
                         Discover our Menu
@@ -164,7 +164,7 @@
                                         <p class="card__price_only">Only</p>
                                         <p class="card__price_value">$1.95</p>
                                     </div>
-                                    <a href="#" class="btn btn__white">Buy Now</a>
+                                    <a href="#popup" class="btn btn__white">Buy Now</a>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +196,7 @@
                                         <p class="card__price_only">Only</p>
                                         <p class="card__price_value">$1.95</p>
                                     </div>
-                                    <a href="#" class="btn btn__white">Buy Now</a>
+                                    <a href="#popup" class="btn btn__white">Buy Now</a>
                                 </div>
                             </div>
                         </div>
@@ -226,7 +226,7 @@
                                         <p class="card__price_only">Only</p>
                                         <p class="card__price_value">$1.95</p>
                                     </div>
-                                    <a href="#" class="btn btn__white">Buy Now</a>
+                                    <a href="#popup" class="btn btn__white">Buy Now</a>
                                 </div>
                             </div>
                         </div>
@@ -238,7 +238,7 @@
                 </div>
             </section>
 
-            <section class="section_stories">
+            <section class="section_stories" id="section_stories">
                 <div class="bg_video">
                     <video class="bg_video__content" autoplay muted loop>
                         <source src="img/coverr-baker-pouring-flour-1586435075957.mp4" type="video/mp4">
@@ -291,7 +291,7 @@
                 </div>
             </section>
 
-            <section class="section_book">
+            <section class="section_book" id="section_book">
                 <div class="row">
                     <div class="book">
                         <div class="book_form">
@@ -364,7 +364,7 @@
             </div>
         </footer>
 
-        <div class="popup">
+        <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__left">
                     <img src="img/booking_image3.jpg" alt="Food photo" class="popup__image">
@@ -372,6 +372,7 @@
                 </div>
                 
                 <div class="popup__right">
+                    <a href="#section_menu" class="popup__close">&times;</a>
                     <h2 class="heading_secondary heading_secondary_menu u_margin_bottom_small">
                         Start Ordering Now
                     </h2>
