@@ -1,0 +1,9 @@
+@mixin neumorphism {
+    box-shadow: .9rem .9rem 1.8rem $color_nav_menu_light, 
+                -.9rem -.9rem 1.8rem $color_nav_menu_dark;
+}
+
+@mixin neumorphismHover {
+    box-shadow: inset .9rem .9rem 1.8rem $color_nav_menu_light, 
+                inset -.9rem -.9rem 1.8rem $color_nav_menu_dark;
+}

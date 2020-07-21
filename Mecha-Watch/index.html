@@ -5,11 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/icon_logo_1.png">
 
     <title>Mecha-Watch</title>
 </head>
 <body>
-    
+    <main>
+        <div class="navigation">
+            <nav class="nav">
+                <div class="nav_logo">
+                    <img src="img/logo_final_trans.png" alt="Mecha-Watch" class="nav_logo_image">
+                </div>
+                <ul class="nav_list">
+                    <li class="nav_list_li"><a href="#">Home</a></li>
+                    <li class="nav_list_li"><a href="#">Features</a></li>
+                    <li class="nav_list_li"><a href="#">About Us</a></li>
+                    <li class="nav_list_li"><a href="#">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header class="header">
+            <div class="header__text_box">
+                <h1 class="heading_primary">
+                    <span class="heading_primary__main">Mecha-Watch</span>
+                    <span class="heading_primary__sub">Time & Tide waits for none.</span>
+                </h1>
+            </div>
+            
+            <div class="header__clock clock">
+                <div class="clock_hour">
+                    <div class="clock_hour_hr" id="clock_hour_hr"></div>
+                </div>
+
+                <div class="clock_min">
+                    <div class="clock_min_mn" id="clock_min_mn"></div>
+                </div>
+
+                <div class="clock_sec">
+                    <div class="clock_sec_sc" id="clock_sec_sc"></div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                const deg = 6;
+                const clock_hour_hr = document.querySelector("#clock_hour_hr");
+                const clock_min_mn = document.querySelector("#clock_min_mn");
+                const clock_sec_sc = document.querySelector("#clock_sec_sc");
+
+                setInterval(() => {
+                    let day = new Date();
+                    let hh = day.getHours() * 30;
+                    let mm = day.getMinutes() * deg;
+                    let ss = day.getSeconds() * deg;
+
+                    clock_hour_hr.style.transform = `rotateZ(${(hh) + (mm / 12)}deg)`;
+                    clock_min_mn.style.transform = `rotateZ(${mm}deg)`;
+                    clock_sec_sc.style.transform = `rotateZ(${ss}deg)`;
+                });
+            </script>
+        </header>
+    </main>
 </body>
 </html>

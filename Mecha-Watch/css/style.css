@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  background: #091921;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7; }
+
+.heading_primary {
+  color: #f5f2d0;
+  text-decoration: underline;
+  margin-bottom: 6rem;
+  text-decoration: none; }
+  .heading_primary__main {
+    display: block;
+    font-size: 8rem;
+    font-family: 'Lobster', cursive;
+    font-weight: 400; }
+  .heading_primary__sub {
+    display: block;
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase; }
+
+.clock {
+  width: 35rem;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../img/clock.png);
+  background-size: cover;
+  border: 6px solid #091921;
+  border-radius: 50%;
+  margin-left: 25rem;
+  box-shadow: -0.9rem -0.9rem 1.8rem #0e2835, inset -0.9rem -0.9rem 1.8rem #0e2835, 0.9rem 0.9rem 1.8rem #040a0d, inset 0.9rem 0.9rem 1.8rem #040a0d; }
+  .clock::before {
+    content: '';
+    position: absolute;
+    width: 1.9rem;
+    height: 1.9rem;
+    background: #f5f2d0;
+    border-radius: 50%;
+    z-index: 100000; }
+  .clock_hour, .clock_min, .clock_sec {
+    position: absolute; }
+  .clock .clock_hour, .clock_hour_hr {
+    width: 16rem;
+    height: 16rem; }
+  .clock .clock_min, .clock_min_mn {
+    width: 19rem;
+    height: 19rem; }
+  .clock .clock_sec, .clock_sec_sc {
+    width: 23rem;
+    height: 23rem; }
+  .clock_hour_hr, .clock_min_mn, .clock_sec_sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%; }
+  .clock_hour_hr:before {
+    content: '';
+    position: absolute;
+    width: .8rem;
+    height: 8rem;
+    background: #ffc23e;
+    z-index: 10;
+    border-radius: .6rem .6rem 0rem 0rem; }
+  .clock_min_mn:before {
+    content: '';
+    position: absolute;
+    width: .6rem;
+    height: 9rem;
+    background: #ce4343;
+    z-index: 11;
+    border-radius: .6rem .6rem 0rem 0rem; }
+  .clock_sec_sc:before {
+    content: '';
+    position: absolute;
+    width: .38rem;
+    height: 15rem;
+    background: #4bd6e8;
+    z-index: 12;
+    border-radius: .6rem .6rem 0rem 0rem; }
+
+.header {
+  background: #091921;
+  display: grid;
+  min-height: 80vh;
+  grid-template-columns: 10% repeat(2, minmax(5rem, 1fr)) 10%; }
+  .header__text_box {
+    grid-column: 2/2;
+    align-self: center; }
+  .header__clock {
+    align-self: center;
+    object-fit: cover;
+    justify-self: center; }
+
+.navigation {
+  background: #091921; }
+
+.nav {
+  width: 80%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav_list {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    list-style: none; }
+    .nav_list_li {
+      min-width: 14rem;
+      font-weight: 800;
+      color: #091921;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: 1.3rem;
+      margin: 0 1.5rem;
+      box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835; }
+    .nav_list_li a {
+      text-decoration: none;
+      color: #f5f2d0; }
+    .nav_list li:hover {
+      cursor: pointer;
+      box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
+      transform: translate(-0.4rem) translateY(0.4rem); }
+  .nav_logo {
+    margin-right: 60rem;
+    border-radius: 1.3rem;
+    box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835; }
+    .nav_logo_image {
+      height: 12rem; }
+    .nav_logo_image:hover {
+      border-radius: 1.3rem;
+      box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
+      transform: translate(-0.4rem) translateY(0.4rem); }

@@ -1,0 +1,27 @@
+body {
+    background: $color_background_main;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+}
+
+.heading_primary {
+    color: $color_off_white;
+    text-decoration: underline;
+    margin-bottom: 6rem;
+    text-decoration: none;
+    
+
+    &__main {
+        display: block;
+        font-size: 8rem;
+        font-family: 'Lobster', cursive;
+        font-weight: 400;
+    }
+
+    &__sub {
+        display: block;
+        font-size: 4rem;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+}
