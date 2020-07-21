@@ -6,9 +6,8 @@ body {
 
 .heading_primary {
     color: $color_off_white;
-    text-decoration: underline;
-    margin-bottom: 6rem;
     text-decoration: none;
+    margin-bottom: 6rem;
     
 
     &__main {
@@ -22,6 +21,5 @@ body {
         display: block;
         font-size: 4rem;
         font-weight: 800;
-        text-transform: uppercase;
     }
 }
