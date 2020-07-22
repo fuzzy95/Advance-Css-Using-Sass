@@ -7,14 +7,15 @@ body {
 .heading_primary {
     color: $color_off_white;
     margin-bottom: 6rem;
-    
+    //@include neumorphismText;
 
     &__main {
         text-decoration: none;
-        display: block;
-        font-size: 8rem;
+        font-size: 13rem;
         font-family: 'Lobster', cursive;
         font-weight: 400;
+        @include neumorphismText;
+        color: $color_background_main;
 
         &:hover {
             cursor: pointer;
@@ -25,17 +26,18 @@ body {
 
     &__sub {
         text-decoration: none;
-        display: block;
+        display: inline-block;
         font-size: 4rem;
         font-weight: 800;
     }
 
     &__feature {
-        display: block;
-        font-size: 6rem;
-        font-family: 'Lobster', cursive;
-        font-weight: 400;
-        text-decoration: underline;
+        color: $color_background_main;
+        text-decoration: none;
+        font-size: 8rem;
+        font-weight: 800;
+        right: 0;
+        @include neumorphismText;
 
         &:hover {
             cursor: pointer;
