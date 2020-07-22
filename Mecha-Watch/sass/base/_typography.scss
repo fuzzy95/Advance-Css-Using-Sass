@@ -6,20 +6,42 @@ body {
 
 .heading_primary {
     color: $color_off_white;
-    text-decoration: none;
     margin-bottom: 6rem;
     
 
     &__main {
+        text-decoration: none;
         display: block;
         font-size: 8rem;
         font-family: 'Lobster', cursive;
         font-weight: 400;
+
+        &:hover {
+            cursor: pointer;
+            color: $color_nav_hover;
+            text-shadow: 0 0 1.4rem $color_nav_hover;
+        }
     }
 
     &__sub {
+        text-decoration: none;
         display: block;
         font-size: 4rem;
         font-weight: 800;
     }
+
+    &__feature {
+        display: block;
+        font-size: 6rem;
+        font-family: 'Lobster', cursive;
+        font-weight: 400;
+        text-decoration: underline;
+
+        &:hover {
+            cursor: pointer;
+            color: $color_nav_hover;
+            text-shadow: 0 0 1.4rem $color_nav_hover;
+        }
+    }
 }
+

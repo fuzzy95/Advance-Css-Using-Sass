@@ -36,17 +36,19 @@
         }
 
         &_li:hover,
+        &_li:active,
+        &_li:active a,
         &_li:hover a {
             cursor: pointer;
             @include neumorphismHover;
             transform: translate(-.4rem) translateY(.4rem);
-            color: $color_clock_sec;
-            text-shadow: 0 0 1.4rem $color_clock_sec;
+            color: $color_nav_hover;
+            text-shadow: 0 0 1.4rem $color_nav_hover;
         }
     }
 
     &_logo {
-        margin-right: 60rem;
+        margin-right: 50rem;
         border-radius: 1.3rem;
         @include neumorphism;
         &_image {
