@@ -27,14 +27,17 @@ body {
     text-shadow: -0.9rem -0.9rem 1.8rem #0e2835, 0.9rem 0.9rem 1.8rem #040a0d;
     border-radius: 1.3rem;
     padding-left: 1rem;
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    transition: .3s; }
     .heading_primary__main:hover {
       cursor: pointer;
       color: #09FBD3;
       text-shadow: 0 0 1.4rem #09FBD3;
       border-radius: 1.3rem;
       padding-left: 1rem;
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835;
+      transform: translate(0.1rem) translateY(0.4rem); }
   .heading_primary__sub {
     color: #ce4343;
     text-decoration: none;
@@ -51,14 +54,17 @@ body {
     text-shadow: -0.9rem -0.9rem 1.8rem #0e2835, 0.9rem 0.9rem 1.8rem #040a0d;
     border-radius: 1.3rem;
     padding-left: 1rem;
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    transition: .3s; }
     .heading_primary__feature:hover {
       cursor: pointer;
       color: #09FBD3;
       text-shadow: 0 0 1.4rem #09FBD3;
       border-radius: 1.3rem;
       padding-left: 1rem;
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835;
+      transform: translate(0.1rem) translateY(0.4rem); }
   .heading_primary__products {
     color: #091921;
     text-decoration: none;
@@ -69,14 +75,17 @@ body {
     text-shadow: -0.9rem -0.9rem 1.8rem #0e2835, 0.9rem 0.9rem 1.8rem #040a0d;
     border-radius: 1.3rem;
     padding-left: 1rem;
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    transition: .3s; }
     .heading_primary__products:hover {
       cursor: pointer;
       color: #09FBD3;
       text-shadow: 0 0 1.4rem #09FBD3;
       border-radius: 1.3rem;
       padding-left: 1rem;
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835;
+      transform: translate(0.1rem) translateY(0.4rem); }
 
 .clock {
   width: 35rem;
@@ -151,7 +160,8 @@ body {
   border-radius: 1rem; }
   .f_card:hover {
     box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
-    transform: translate(-0.4rem) translateY(0.4rem); }
+    transform: translate(-0.4rem) translateY(0.4rem);
+    transition: .3s; }
   .f_card_image {
     position: relative;
     text-align: center;
@@ -182,19 +192,21 @@ body {
       text-shadow: 0 0 1.4rem #ce4343;
       font-size: 1.9rem;
       text-decoration: none;
-      box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835; }
+      box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835;
+      transition: .3s; }
       .f_card_text_button:hover {
         box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
         transform: translate(-0.4rem) translateY(0.4rem); }
 
 .p_card {
   width: 35rem;
-  margin: 20px;
+  margin: 2.8rem;
   padding: 4rem 3rem;
   background: #091921;
   border: 6px solid #091921;
   box-shadow: -0.9rem -0.9rem 1.8rem #0e2835, inset -0.9rem -0.9rem 1.8rem #0e2835, 0.9rem 0.9rem 1.8rem #040a0d, inset 0.9rem 0.9rem 1.8rem #040a0d;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  margin-bottom: 5rem; }
   .p_card_image {
     display: flex;
     justify-content: center;
@@ -230,7 +242,9 @@ body {
       box-shadow: -0.9rem -0.9rem 1.8rem #0e2835, inset -0.9rem -0.9rem 1.8rem #0e2835, 0.9rem 0.9rem 1.8rem #040a0d, inset 0.9rem 0.9rem 1.8rem #040a0d;
       transition: .3s; }
       .p_card_btn_small:hover {
-        box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835; }
+        box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835;
+        transform: translateY(0.2rem);
+        transition: .3s; }
     .p_card_btn_round {
       display: inline-block;
       font-size: 3rem;
@@ -243,9 +257,28 @@ body {
       text-decoration: none;
       box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835; }
       .p_card_btn_round:hover {
-        box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835; }
+        box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
+        transform: translate(-0.4rem) translateY(0.4rem); }
+  .p_card_text_button {
+    display: inline-block;
+    padding: 1rem 1.7rem;
+    margin-top: 4.5rem;
+    margin-left: 45.5%;
+    margin-right: 45.5%;
+    border-radius: 1rem;
+    color: #ce4343;
+    text-shadow: 0 0 1.4rem #ce4343;
+    font-size: 1.9rem;
+    text-decoration: none;
+    box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835;
+    transition: .3s; }
+    .p_card_text_button:hover {
+      box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
+      transform: translate(-0.4rem) translateY(0.4rem); }
   .p_card:hover {
-    box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835; }
+    box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835;
+    transform: translate(0.1rem) translateY(0.4rem);
+    transition: .3s; }
 
 .header {
   background: #091921;
@@ -323,7 +356,8 @@ body {
       box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
       transform: translate(-0.4rem) translateY(0.4rem);
       color: #09FBD3;
-      text-shadow: 0 0 1.4rem #09FBD3; }
+      text-shadow: 0 0 1.4rem #09FBD3;
+      transition: .3s; }
   .nav_logo {
     margin-right: 50rem;
     border-radius: 1.3rem;
@@ -333,7 +367,8 @@ body {
     .nav_logo_image:hover {
       border-radius: 1.3rem;
       box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
-      transform: translate(-0.4rem) translateY(0.4rem); }
+      transform: translate(-0.4rem) translateY(0.4rem);
+      transition: .3s; }
 
 .section_feature {
   margin-top: 20rem;

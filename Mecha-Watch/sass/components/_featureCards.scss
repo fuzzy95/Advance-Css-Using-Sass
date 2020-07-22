@@ -9,6 +9,7 @@
     &:hover {
         @include neumorphismHover;
         transform: translate(-.4rem) translateY(.4rem);
+        transition: .3s;
     }
 
     &_image {
@@ -49,6 +50,7 @@
             font-size: 1.9rem;
             text-decoration: none;
             @include neumorphism;
+            transition: .3s;
 
             &:hover {
                 @include neumorphismHover;

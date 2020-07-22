@@ -1,11 +1,13 @@
 .p_card {
     width: 35rem;
-    margin: 20px;
+    margin: 2.8rem;
     padding: 4rem 3rem;
     background: $color_background_main;
     // @include neumorphism;
     @include clockmorphism;
     border-radius: 1rem;
+
+    margin-bottom: 5rem;
 
     &_image{
         display: flex;
@@ -54,6 +56,8 @@
 
             &:hover {
                 @include neumorphism;
+                transform: translateY(.2rem);
+            transition: .3s;
             }
         }
     
@@ -71,13 +75,36 @@
 
             &:hover {
                 @include neumorphismHover;
+                transform: translate(-.4rem) translateY(.4rem);
             }
         }
+    }
+
+    &_text_button {
+        display: inline-block;
+        padding: 1rem 1.7rem;
+        margin-top: 4.5rem;
+        margin-left: 45.5%;
+        margin-right: 45.5%;
+        border-radius: 1rem;
+        color: $color_clock_min;
+        text-shadow: 0 0 1.4rem $color_clock_min;
+        font-size: 1.9rem;
+        text-decoration: none;
+        @include neumorphism;
+        transition: .3s;
+
+        &:hover {
+            @include neumorphismHover;
+            transform: translate(-.4rem) translateY(.4rem);
+        } 
     }
     
 
     &:hover {
         @include neumorphism;
+        transform: translate(.1rem) translateY(.4rem);
+        transition: .3s;
     }
 
 }

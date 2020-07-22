@@ -18,6 +18,7 @@ body {
         border-radius: 1.3rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        transition: .3s;
 
         &:hover {
             cursor: pointer;
@@ -27,6 +28,8 @@ body {
             border-radius: 1.3rem;
             padding-left: 1rem;
             padding-right: 1rem;
+            @include neumorphism;
+            transform: translate(.1rem) translateY(.4rem);
         }
     }
 
@@ -48,6 +51,7 @@ body {
         border-radius: 1.3rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        transition: .3s;
 
         &:hover {
             cursor: pointer;
@@ -57,6 +61,8 @@ body {
             border-radius: 1.3rem;
             padding-left: 1rem;
             padding-right: 1rem;
+            @include neumorphism;
+            transform: translate(.1rem) translateY(.4rem);
         }
     }
 
@@ -70,6 +76,7 @@ body {
         border-radius: 1.3rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        transition: .3s;
 
         &:hover {
             cursor: pointer;
@@ -79,6 +86,8 @@ body {
             border-radius: 1.3rem;
             padding-left: 1rem;
             padding-right: 1rem;
+            @include neumorphism;
+            transform: translate(.1rem) translateY(.4rem);
         }
     }
 }
