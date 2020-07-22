@@ -1,4 +1,5 @@
 .section_feature {
+    margin-top: 20rem;
     display: grid;
     min-height: 80vh;
     grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
@@ -29,6 +30,26 @@
         grid-row: 2/2;
         align-self: flex-start;
         object-fit: cover;
+        justify-self: center;
+    }
+}
+
+.section_product {
+    width: 80%;
+    margin: auto;
+    min-height: 100vh;
+    padding: 3rem 0rem;
+    margin-top: 25rem;
+
+    &_heading {
+        display: inline-block;
+        justify-self: start;
+        margin-bottom: 10rem;
+    }
+
+    &_cards {
+        display: flex;
+        justify-content: space-between;
         justify-self: center;
     }
 }

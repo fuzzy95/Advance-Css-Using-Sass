@@ -18,6 +18,14 @@
                 inset .9rem .9rem 1.8rem $color_nav_menu_light;
 }
 
+@mixin clockmorphism {
+    border: 6px solid $color_background_main;
+    box-shadow: -.9rem -.9rem 1.8rem $color_nav_menu_dark,
+                inset -.9rem -.9rem 1.8rem $color_nav_menu_dark,
+                .9rem .9rem 1.8rem $color_nav_menu_light,
+                inset .9rem .9rem 1.8rem $color_nav_menu_light;
+}
+
 @mixin clearfix {
     &::after {
         content: "";

@@ -6,19 +6,15 @@
     align-items: center;
     background: url(../../img/clock.png);
     background-size: cover;
-    border: 6px solid $color_background_main;
     border-radius: 50%;
     margin-left: 15rem;
     // box-shadow: 0 -1.5rem 1.5rem rgba(255, 255, 255, 0.05),
     //             inset 0 -1.5rem 1.5rem rgba(255, 255, 255, 0.05),
     //             0 1.5rem 1.5rem rgba(0, 0, 0, 0.05),
     //             inset 0 1.5rem 1.5rem rgba(0, 0, 0, 0.05);
+    @include clockmorphism;
 
-    box-shadow: -.9rem -.9rem 1.8rem $color_nav_menu_dark,
-                inset -.9rem -.9rem 1.8rem $color_nav_menu_dark,
-                .9rem .9rem 1.8rem $color_nav_menu_light,
-                inset .9rem .9rem 1.8rem $color_nav_menu_light;
-
+    
     &::before {
         content: '';
         position: absolute;

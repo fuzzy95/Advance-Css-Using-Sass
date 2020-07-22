@@ -5,26 +5,33 @@ body {
 }
 
 .heading_primary {
-    color: $color_off_white;
     margin-bottom: 6rem;
-    //@include neumorphismText;
 
     &__main {
+        color: $color_background_main;
         text-decoration: none;
         font-size: 13rem;
         font-family: 'Lobster', cursive;
         font-weight: 400;
+        @include clockmorphism;
         @include neumorphismText;
-        color: $color_background_main;
+        border-radius: 1.3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
 
         &:hover {
             cursor: pointer;
             color: $color_nav_hover;
             text-shadow: 0 0 1.4rem $color_nav_hover;
+            //@include neumorphismHover;
+            border-radius: 1.3rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
     }
 
     &__sub {
+        color: $color_clock_min;
         text-decoration: none;
         display: inline-block;
         font-size: 4rem;
@@ -36,14 +43,44 @@ body {
         text-decoration: none;
         font-size: 8rem;
         font-weight: 800;
-        right: 0;
+        @include clockmorphism;
         @include neumorphismText;
+        border-radius: 1.3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
 
         &:hover {
             cursor: pointer;
             color: $color_nav_hover;
             text-shadow: 0 0 1.4rem $color_nav_hover;
+            //@include neumorphismHover;
+            border-radius: 1.3rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+
+    &__products {
+        color: $color_background_main;
+        text-decoration: none;
+        font-size: 8rem;
+        font-weight: 800;
+        @include clockmorphism;
+        @include neumorphismText;
+        border-radius: 1.3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        &:hover {
+            cursor: pointer;
+            color: $color_nav_hover;
+            text-shadow: 0 0 1.4rem $color_nav_hover;
+            //@include neumorphismHover;
+            border-radius: 1.3rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
     }
 }
+
 
