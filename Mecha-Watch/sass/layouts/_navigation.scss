@@ -33,7 +33,7 @@
 
         &_li a{
             text-decoration: none;
-            color: $color_off_white;
+            color: $color_quaternary_dark;
         }
 
         &_li:hover,
@@ -43,8 +43,8 @@
             cursor: pointer;
             @include neumorphismHover;
             transform: translate(-.4rem) translateY(.4rem);
-            color: $color_nav_hover;
-            text-shadow: 0 0 1.4rem $color_nav_hover;
+            color: $color_quaternary_dark;
+            text-shadow: 0 0 1.4rem $color_quaternary_dark;
             transition: .3s;
         }
     }

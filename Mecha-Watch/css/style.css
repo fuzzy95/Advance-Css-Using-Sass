@@ -31,15 +31,14 @@ body {
     transition: .3s; }
     .heading_primary__main:hover {
       cursor: pointer;
-      color: #09FBD3;
-      text-shadow: 0 0 1.4rem #09FBD3;
+      color: #556270;
       border-radius: 1.3rem;
       padding-left: 1rem;
       padding-right: 1rem;
       box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835;
       transform: translate(0.1rem) translateY(0.4rem); }
   .heading_primary__sub {
-    color: #ce4343;
+    color: #556270;
     text-decoration: none;
     display: inline-block;
     font-size: 4rem;
@@ -58,8 +57,7 @@ body {
     transition: .3s; }
     .heading_primary__feature:hover {
       cursor: pointer;
-      color: #09FBD3;
-      text-shadow: 0 0 1.4rem #09FBD3;
+      color: #556270;
       border-radius: 1.3rem;
       padding-left: 1rem;
       padding-right: 1rem;
@@ -79,13 +77,24 @@ body {
     transition: .3s; }
     .heading_primary__products:hover {
       cursor: pointer;
-      color: #09FBD3;
-      text-shadow: 0 0 1.4rem #09FBD3;
+      color: #556270;
       border-radius: 1.3rem;
       padding-left: 1rem;
       padding-right: 1rem;
       box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835;
       transform: translate(0.1rem) translateY(0.4rem); }
+
+.heading_secondary {
+  color: #556270;
+  margin-bottom: 3rem;
+  text-decoration: none;
+  font-size: 5rem;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  border-radius: 1.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: .3s; }
 
 .clock {
   width: 35rem;
@@ -158,38 +167,32 @@ body {
   background: #091921;
   box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835;
   border-radius: 1rem; }
-  .f_card:hover {
-    box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
-    transform: translate(-0.4rem) translateY(0.4rem);
-    transition: .3s; }
   .f_card_image {
     position: relative;
     text-align: center;
     font-size: 12rem;
-    color: #09FBD3;
-    text-shadow: 0 0 1.4rem #09FBD3; }
+    color: #556270; }
   .f_card_text {
     position: relative;
     margin-top: 2rem;
     text-align: center; }
     .f_card_text_heading {
       color: #ce4343;
-      text-shadow: 0 0 1.4rem #ce4343;
       font-size: 3.8rem;
       margin-bottom: 1rem;
       letter-spacing: .2rem; }
+      .f_card_text_heading:hover {
+        text-shadow: 0 0 1.4rem #ce4343; }
     .f_card_text_p {
       font-size: 1.9rem;
       font-weight: 800;
-      color: #ffc3be;
-      text-shadow: 0 0 1.4rem #ffc23e; }
+      color: #556270; }
     .f_card_text_button {
       display: inline-block;
       padding: 1rem 2rem;
       margin-top: 1.5rem;
       border-radius: 1rem;
       color: #ce4343;
-      text-shadow: 0 0 1.4rem #ce4343;
       font-size: 1.9rem;
       text-decoration: none;
       box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835;
@@ -197,6 +200,10 @@ body {
       .f_card_text_button:hover {
         box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
         transform: translate(-0.4rem) translateY(0.4rem); }
+  .f_card:hover {
+    box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
+    transform: translate(-0.4rem) translateY(0.4rem);
+    transition: .3s; }
 
 .p_card {
   width: 35rem;
@@ -221,8 +228,7 @@ body {
     text-align: center; }
     .p_card_title a {
       text-decoration: none;
-      color: #09FBD3;
-      text-shadow: 0 0 1.4rem #09FBD3; }
+      color: #556270; }
   .p_card_btn {
     display: flex;
     justify-content: center; }
@@ -230,7 +236,7 @@ body {
       text-decoration: none;
       cursor: pointer;
       transition: .3s;
-      color: #ce4343; }
+      color: #999; }
     .p_card_btn_small {
       display: inline-block;
       font-size: 1.4rem;
@@ -258,7 +264,7 @@ body {
       box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835; }
       .p_card_btn_round:hover {
         box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
-        transform: translate(-0.4rem) translateY(0.4rem); }
+        transform: translate(0.4rem) translateY(0.4rem); }
   .p_card_text_button {
     display: inline-block;
     padding: 1rem 1.7rem;
@@ -266,8 +272,7 @@ body {
     margin-left: 45.5%;
     margin-right: 45.5%;
     border-radius: 1rem;
-    color: #ce4343;
-    text-shadow: 0 0 1.4rem #ce4343;
+    color: #999;
     font-size: 1.9rem;
     text-decoration: none;
     box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835;
@@ -292,6 +297,58 @@ body {
     align-self: center;
     object-fit: cover;
     justify-self: center; }
+
+.footer {
+  min-height: 20vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  margin-bottom: 2rem; }
+  .footer_header {
+    flex: 3; }
+  .footer_text {
+    font-size: 1.5rem;
+    color: #999;
+    margin-top: 2rem; }
+    .footer_text_link {
+      text-decoration: none;
+      padding: 1rem;
+      border-radius: 1rem;
+      font-weight: 800;
+      color: #556270;
+      transition: .3s;
+      box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835; }
+      .footer_text_link:hover {
+        box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
+        color: #ce4343;
+        text-shadow: 0 0 1.4rem #ce4343;
+        transform: translate(-0.4rem) translateY(0.4rem);
+        transition: .3s; }
+  .footer_ul {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    justify-content: space-between; }
+    .footer_ul_li {
+      font-size: 3rem;
+      margin-left: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+      height: 4.5rem;
+      width: 4.5rem;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835; }
+      .footer_ul_li a {
+        text-decoration: none;
+        color: #999; }
+      .footer_ul_li:hover {
+        box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
+        transform: translate(-0.4rem) translateY(0.4rem);
+        transition: .3s; }
 
 .row {
   max-width: 114rem;
@@ -348,15 +405,15 @@ body {
       box-shadow: 0.9rem 0.9rem 1.8rem #040a0d, -0.9rem -0.9rem 1.8rem #0e2835; }
     .nav_list_li a {
       text-decoration: none;
-      color: #f5f2d0; }
+      color: #556270; }
     .nav_list_li:hover, .nav_list_li:active,
     .nav_list_li:active a,
     .nav_list_li:hover a {
       cursor: pointer;
       box-shadow: inset 0.9rem 0.9rem 1.8rem #040a0d, inset -0.9rem -0.9rem 1.8rem #0e2835;
       transform: translate(-0.4rem) translateY(0.4rem);
-      color: #09FBD3;
-      text-shadow: 0 0 1.4rem #09FBD3;
+      color: #556270;
+      text-shadow: 0 0 1.4rem #556270;
       transition: .3s; }
   .nav_logo {
     margin-right: 50rem;

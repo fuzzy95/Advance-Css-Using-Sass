@@ -28,8 +28,8 @@
 
         & a {
             text-decoration: none;
-            color: $color_nav_hover;
-            text-shadow: 0 0 1.4rem $color_nav_hover;
+            color: $color_quaternary_dark;
+            // text-shadow: 0 0 1.4rem $color_quaternary_dark;
         }
     }
 
@@ -41,7 +41,7 @@
             text-decoration: none;
             cursor: pointer;
             transition: .3s;
-            color: $color_clock_min;
+            color: $color_grey_dark_2;
         }
 
         &_small {
@@ -75,7 +75,7 @@
 
             &:hover {
                 @include neumorphismHover;
-                transform: translate(-.4rem) translateY(.4rem);
+                transform: translate(.4rem) translateY(.4rem);
             }
         }
     }
@@ -87,8 +87,8 @@
         margin-left: 45.5%;
         margin-right: 45.5%;
         border-radius: 1rem;
-        color: $color_clock_min;
-        text-shadow: 0 0 1.4rem $color_clock_min;
+        color: $color_grey_dark_2;
+        // text-shadow: 0 0 1.4rem $color_grey_dark_2;
         font-size: 1.9rem;
         text-decoration: none;
         @include neumorphism;
