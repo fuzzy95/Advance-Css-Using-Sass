@@ -30,6 +30,8 @@
 // }
 
 
+ORDER: Base + typography > general layout + grid > page layout > components
+
 $breakpoint argument choices:
 -phone
 -tab-port
@@ -41,9 +43,7 @@ $breakpoint argument choices:
 
 // @mixin respond($breakpoint) {
 //     @if $breakpoint == phone {
-//         @media (max-width: 37.5em) {
-//             @content
-//         };
+//         @media (max-width: 37.5em) { @content };
 //     }
 
 //     @if $breakpoint == tab_port {
@@ -51,15 +51,11 @@ $breakpoint argument choices:
 //     }
 
 //     @if $breakpoint == tab_land {
-//         @media (max-width: 75em) {
-//             @content
-//         };
+//         @media (max-width: 75em) { @content };
 //     }
 
 //     @if $breakpoint == big_desktop {
-//         @media (max-width: 112.5em) {
-//             @content
-//         };
+//         @media (max-width: 112.5em) { @content };
 //     }
 // }
 
@@ -67,13 +63,13 @@ $breakpoint argument choices:
     @if $breakpoint == phone {
         @media (max-width: 37.5em) {@content }; //600px
     }
-    @if $breakpoint == tab-port{
+    @if $breakpoint == tab_port{
         @media (max-width: 56.25em) {@content };  //900px
     }
-    @if $breakpoint == tab-land {
+    @if $breakpoint == tab_land {
         @media (max-width: 75em) {@content }; ///1200px
     }
-    @if $breakpoint == big-desk {
+    @if $breakpoint == big_desk {
         @media (min-width: 112.5em) {@content }; //1800px
     }
 }

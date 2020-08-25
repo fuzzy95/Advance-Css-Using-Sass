@@ -4,7 +4,6 @@ body {
     /*font-size: 16px;*/
     line-height: 1.7;
     color: $color_grey_dark;
-    padding: 3rem;
 }
 
 .heading_primary {
@@ -23,6 +22,12 @@ body {
     
         /* animation parts */
         animation: moveInLeft 2s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
+    
     }
     
     &__sub {
@@ -38,6 +43,10 @@ body {
         */
     
         animation: moveInRight 2s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
     }
 }
 
@@ -67,12 +76,18 @@ body {
         background-image: linear-gradient(to right bottom, $color_section_booking_bg_light, $color_section_booking_bg_dark);
     }
 
+    @include respond(tab_port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2rem;
+    }
+
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color_black, .2);
     }
-
-
 }
 
 .heading_tartiary {

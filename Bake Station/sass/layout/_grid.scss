@@ -1,23 +1,39 @@
 .row {
     max-width: $grid_width;
-    //background-color: rgba(132, 223, 113, 0.933);
     margin: 0 auto;
 
     // Everything inteasd the last child
     &:not(:last-child) {
         margin-bottom: $gutter_vertical;
+
+        @include respond(tab_port) {
+            margin-bottom: $gutter_vertical_small;
+        }
     }
+
+    @include respond(tab_port) {
+        max-width: 50rem;
+        padding: 0 3rem;
+    } 
 
     @include clearfix;
 
 
     // attribute selector
     [class^="col_"] {
-        //background-color: rgb(205, 226, 19);
         float: left;
 
         &:not(:last-child) {
             margin-right: $gutter_horizontal;
+
+            @include respond(tab_port) {
+                margin-right: 0;
+                margin-bottom: $gutter_vertical_small;
+            }
+        }
+
+        @include respond(tab_port) {
+            width: 100% !important;
         }
     }
 

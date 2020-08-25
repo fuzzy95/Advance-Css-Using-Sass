@@ -13,6 +13,8 @@
 // }
 
 
+ORDER: Base + typography > general layout + grid > page layout > components
+
 $breakpoint argument choices:
 -phone
 -tab-port
@@ -60,26 +62,29 @@ $breakpoint argument choices:
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 58.25em) {
-    html {
-      font-size: 50%; } }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 112.5em) {
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "Teko", sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
-  color: #777777;
-  padding: 3rem; }
+  color: #777777; }
 
 .heading_primary {
   color: #d4325a;
@@ -94,6 +99,10 @@ body {
     letter-spacing: 2rem;
     /* animation parts */
     animation: moveInLeft 2s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading_primary__main {
+        letter-spacing: 1rem;
+        font-family: 5rem; } }
   .heading_primary__sub {
     display: block;
     font-size: 2rem;
@@ -106,6 +115,9 @@ body {
         animation-timing-function: ease-out;
         */
     animation: moveInRight 2s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading_primary__sub {
+        letter-spacing: .5rem; } }
 
 .heading_secondary {
   font-size: 3.5rem;
@@ -124,6 +136,12 @@ body {
     background-image: linear-gradient(to right, #cbb4d4, #2e063d); }
   .heading_secondary_booking {
     background-image: linear-gradient(to right bottom, #ff9966, #ff5e62); }
+  @media (max-width: 56.25em) {
+    .heading_secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading_secondary {
+      font-size: 2rem; } }
   .heading_secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -282,13 +300,13 @@ body {
     z-index: 10;
     outline-offset: 2rem; }
     .composition__photo__p1 {
-      left: 64%;
+      left: 24%;
       top: -7.5rem; }
     .composition__photo__p2 {
-      right: -4%;
-      top: 4.5rem; }
+      right: 0%;
+      top: 5.5rem; }
     .composition__photo__p3 {
-      left: 8%;
+      left: 5%;
       top: 17rem; }
     .composition__photo:hover {
       outline: 1.5rem solid #50d39ce8;
@@ -599,10 +617,13 @@ body {
   background-image: linear-gradient(to right bottom, #50d39ca2, #bcd87ac2), url(../img/5f06ab7481883.jpg);
   background-size: cover;
   background-position: top;
-  /*position: relative; */
   -webkit-clip-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   /* logo design */ }
+  @media (max-width: 37.5em) {
+    .header {
+      -webkit-clip-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%); } }
   .header__logo_box {
     position: absolute;
     top: 4rem;
@@ -621,6 +642,13 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -629,6 +657,13 @@ body {
     float: left; }
     .row [class^="col_"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col_"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col_"] {
+        width: 100% !important; } }
   .row .col_1_of_2 {
     width: calc((100% - 6rem) / 2); }
   .row .col_1_of_3 {
@@ -647,6 +682,9 @@ body {
   padding: 9rem 0;
   font-size: 2.5rem;
   color: #f7f7f7; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo_box {
     text-align: center;
     margin-bottom: 8rem; }
@@ -657,6 +695,10 @@ body {
     border-top: 1px solid #777777;
     padding: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -679,6 +721,10 @@ body {
     padding: 2rem;
     width: 80%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
 
 .navigation__checkbox {
   display: none; }
