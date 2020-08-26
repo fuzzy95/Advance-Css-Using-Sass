@@ -2,6 +2,10 @@
     background-color: $color_grey_light_1;
     padding: 25rem 0;
     margin-top: -20vh;
+
+    @include respond(tab_port) {
+        padding: 30rem 0;
+    }
 }
 
 .section_features {
@@ -18,18 +22,29 @@
     & > * {
         transform: skewY(5deg);
     }
+
+    @include respond(tab_port) {
+        padding: 10rem 0;
+    }
 }
 
 .section_menu {
     background-color: $color_grey_light_1;
     padding: 25rem 0 15rem 0;
     margin-top: -10.7rem;
+
+    @include respond(tab_port) {
+        padding: 20rem 0 10rem 0;
+    }
 }
 
 .section_stories {
     position: relative;
     padding: 15rem 0;
-    //background-color: $color_grey_light_1;
+    
+    @include respond(tab_port) {
+        padding: 10rem 0;
+    }
 }
 .section_book {
     padding: 15rem 0;
@@ -37,23 +52,48 @@
         to right bottom, 
         $color_primary, 
         $color_primary_light);
-    //background-image: linear-gradient(to right bottom, $color_section_booking_bg_light, $color_section_booking_bg_dark);
+    
+    @include respond(tab_port) {
+        padding: 10rem 0;
+    }
 }
 
 .book {
     background-image: linear-gradient(105deg, 
-                                      rgba($color_white, .9) 0%,
-                                      rgba($color_white, .9) 50%, 
-                                      transparent 50%), 
-                                      url(../../img/booking_image5.jpg);
+                    rgba($color_white, .9) 0%,
+                    rgba($color_white, .9) 50%, 
+                    transparent 50%), 
+                    url(../../img/booking_image5.jpg);
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color_black, .45);
 
-    height: 65rem;
+    @include respond(tab_land) {
+        background-image: linear-gradient(105deg, 
+                    rgba($color_white, .9) 0%,
+                    rgba($color_white, .9) 65%, 
+                    transparent 65%), 
+                    url(../../img/booking_image5.jpg);
+        background-size: cover;
+    }
+
+    @include respond(tab_port) {
+        background-image: linear-gradient(to right, 
+                    rgba($color_white, .9) 0%,
+                    rgba($color_white, .9) 65%), 
+                    url(../../img/booking_image5.jpg);
+    }
 
     &_form {
         width: 50%;
         padding: 6rem;
+
+        @include respond(tab_land) {
+            width: 65%;
+        }
+
+        @include respond(tab_port) {
+            width: 100%;
+        }
     }
 }
